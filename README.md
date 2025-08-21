@@ -67,6 +67,10 @@ The application contains:
 
 ---
 
+## UI
+<img width="1123" height="199" alt="Screenshot 2025-08-21 at 9 32 13 AM" src="https://github.com/user-attachments/assets/e8725903-f3c9-40c0-a153-191ac42eb9da" />
+
+
 ##References
 
 SAP UI5 SDK
