@@ -1,0 +1,17 @@
+{
+    "name": "emp.Employee1",
+    "scripts": {
+        "build": "mbt build --mtar emp.Employee1.mtar",
+        "build:workspaces": "npm run build --workspaces --if-present",
+        "deploy": "cf deploy mta_archives/emp.Employee1.mtar --retries 0",
+        "lint": "npm run lint --workspaces --if-present",
+        "ui5lint": "npm run ui5lint --workspaces --if-present",
+        "start:emp1": "npm start --workspace emp1"
+    },
+    "dependencies": {
+        "mbt": "^1"
+    },
+    "workspaces": [
+        "emp1"
+    ]
+}

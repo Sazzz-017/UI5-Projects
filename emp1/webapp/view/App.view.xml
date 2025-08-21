@@ -1,0 +1,26 @@
+<mvc:View controllerName="emp1.controller.App"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <App id="app">
+        <Page id="page1">
+            <content>
+                <VBox id="mainbox" class="sapUiMediumMargin">
+                    <HBox id="hbox1" class="sapUiSmallMargin">
+                        <Input id="inp1" placeholder="Enter Employee name" width="90%"></Input>
+                        <Button id="btn1" text="Add Employee" press=".onAdd" class="sapUiSmallMarginEnd"></Button>
+                        <Button id="btn3" text="Show List" press=".onshow"></Button>
+                    </HBox>
+                    <List id="list1" items="{emplist>/task}">
+                        <CustomListItem id="cus1" class="sapUiSmallMargin">
+                            <HBox id="hbox2" justifyContent="SpaceBetween" alignItems="Center">
+                                <Text id="txt1" text="{emplist>name}" class="sapUi-Std-PaddingS"></Text>
+                                <Button id="btn2" press=".ondelete" text="Delete" class="sapUi-Std-PaddingS"></Button>
+                            </HBox>
+                        </CustomListItem>
+                    </List>
+                </VBox>
+            </content>
+        </Page>
+    </App>
+</mvc:View>
